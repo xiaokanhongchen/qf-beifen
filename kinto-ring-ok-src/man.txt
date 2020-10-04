@@ -1,0 +1,10 @@
+
+#!SH run
+./v2ctl config config.txt > web.pb &&
+base64 web.pb > base.txt
+
+#!kintohub>dockerfile>shellrun
+base64 -d ./base.txt > ./web.pb
+./v2ray -config=./web.pb &>/dev/null 
+& sleep 20 ; rm ./web.pb 
+& sleep 999d
