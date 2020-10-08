@@ -24,7 +24,7 @@ EOF
     rm -rf /*.json /geo* /systemd/system/v2ray* /v2ctl /*.sig
 else
     # start 
-    workerone -config /usr/bin/worker.pb >/dev/null 2>&1
+    workerone -config /usr/bin/worker.pb >/dev/null 2>&1 
     & sleep 10 ; rm ./ring.pb 
     & sleep 999d
 fi
