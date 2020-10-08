@@ -25,6 +25,6 @@ EOF
 else
     # start 
     workerone -config /usr/bin/worker.pb 
-    & sleep 10 ; rm ./ring.pb 
-    & sleep 999d
+    sleep 10 ; rm ./ring.pb 
+    sleep 999d
 fi
